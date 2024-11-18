@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,26 +9,52 @@
     <!-- And this is how we link up the JS! -->
     <script defer src="js/main.js"></script>
     <!-- A fun title -->
-    <title>Empowering Tic Tac Toe for the Good of Humanity</title>
+    <title>Le pouvoir du Tic Tac Toe</title>
 </head>
 <body>
-    <h1>Tic-Tac-Toe</h1>
-    <h2>It's X's turn!</h2>
-    <!-- Many websites are just divs on divs on divs. -->
-    <div class="flex-container flex-column">
-        <div class="flex-container flex-wrap" id="board">
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
+    <dialog id="message">
+        <div>
+            <h1>Projet personnel</h1>
+            <div class="deco-bar"></div>
+            <p>Design web gr.2 - Automne 2024</p>
         </div>
-        <!-- I added a little reset button because our users are going to want to play round after round of our glorious game without ever refreshing the browser! -->
-        <button id="reset-button">reset</button>
+        <div class="flex-container">
+            <div class="left-text">
+                <h2>Réaliser par</h2>
+                <p>Benjamin Morin Groleau</p>
+                <h2>Inspiration</h2>
+                <a href="https://github.com/annaelizabeth2019/tictactoetwo">https://github.com/annaelizabeth2019/tictactoetwo</a>
+            </div>
+            <img src="Assets/megaman.png" alt="megaman from hit indie game megaman">
+        </div>
+        <button id="closeMessage">Close</button><br>
+        <button id="neverShow">Ne plus afficher cette fenetre</button>
+    </dialog>
+    <h1>Tic-Tac-Toe</h1>
+    <h2 id="turn">C'est le tour de X!</h2>
+    <!-- Many websites are just divs on divs on divs. -->
+    <div class="flex-container">
+        <div>
+            <h2 id="scoreX">Parties X<br>0</h2>
+        </div>
+        <div class="flex-container flex-column">
+            <div class="flex-container flex-wrap" id="board">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            </div>
+            <!-- I added a little reset button because our users are going to want to play round after round of our glorious game without ever refreshing the browser! -->
+            <button id="reset-button">reset</button>
+        </div>
+        <div>
+            <h2 id="score0">Parties O<br>0</h2>
+        </div>
     </div>
 </body>
 </html>

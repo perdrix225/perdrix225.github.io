@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bokor&display=swap');
 body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -23,7 +24,7 @@ h2 {
 
 .flex-column {
     height: 100%;
-    width: 100%;
+    width: 50%;
     flex-direction: column;
     /* tells the container to drop down once it reaches max-width */
 }
@@ -40,6 +41,7 @@ h2 {
     height: 140px;
     width: 140px;
     font-size: 80px;
+    font-family: "Bokor";
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,4 +55,32 @@ h2 {
     height: 55px;
     width: 100px;
     margin: 10px;
+}
+
+::backdrop{
+    background-color: rgba(93, 188, 251, 0.5);
+}
+
+#message{
+    border-radius: 5%;
+}
+
+.left-text{
+    text-align: left;
+}
+.left-text>*{
+    margin: 10px;
+}
+
+.deco-bar{
+    border: 1px blue solid;
+}
+
+#neverShow{
+    border: none;
+    background-color: white;
+    font-family: cursive;
+}
+#neverShow:hover{
+    text-shadow: 0px 0px 1px blue;
 }
